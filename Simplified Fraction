@@ -1,0 +1,37 @@
+//DIVIDE FRACTION 1 BY FRACTION 2 AND THE RESULTANT FRACTION IS A SIMPLIFIED FRACTION
+
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+int hcf(int a,int b)
+{
+	int i,gcd;
+	for(i=1;i<=a && i<=b;i++)
+	{
+	   if(a%i==0 && b%i==0)
+	   gcd=i;
+	}
+	return gcd;
+}
+void main()
+{
+	clrscr();
+	int gcd;
+	int nr1,dr1,nr2,dr2,nr3,dr3;  //nr3 and dr3 are for resultant fraction
+	cout<<"enter numerator and denominator of fraction 1:";
+	cin>>nr1>>dr1;
+	
+  cout<<"enter numerator and denominator of fraction 2:";
+	cin>>nr2>>dr2;
+	 
+  cout<<"fraction 1="<<nr1<<"/"<<dr1<<endl;
+	cout<<"fraction 2="<<nr2<<"/"<<dr2<<endl;
+	
+  nr3=nr1*dr2;
+	dr3=nr2*dr1;
+	gcd=hcf(nr3,dr3);
+	nr3=nr3/gcd;
+	dr3=dr3/gcd;
+	cout<<"RESULTANT FRACTION"<<nr3<<"/"<<dr3;
+	getch();
+}

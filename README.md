@@ -1,3 +1,4 @@
 # harish
 I Love Gaming
-studying @ svce
+
+I am studying  CSE @ svce

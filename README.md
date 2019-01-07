@@ -1,2 +1,3 @@
 # harish
-i love gaming
+I Love Gaming
+studying @ svce
